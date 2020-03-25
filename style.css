@@ -1,0 +1,44 @@
+
+*{
+    font-family: sans-serif;  
+}
+h1{
+       color: #333333;   
+}
+body{
+       background-color:black;
+}
+#tela{
+       width: 60%;
+       height: 550px;
+       background-color: white;
+        display: inline-block;
+        margin: 0px, 10px, 0px, 10px; 
+        padding: 25px;
+        position: absolute;
+        left: 15%;
+        top: 0px; 
+}
+
+#resultado{
+    display: none;
+    background-color: #56f89a;
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+}
+#jogar{
+    display: none;    
+}
+#questionario{
+    display : none;
+}
+section{
+    vertical-align: top;
+}
+#resultado{
+    display: none;
+}
+#retornar{
+    display: none;
+}

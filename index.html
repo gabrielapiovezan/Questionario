@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tela">
+    <h1>Quiz</h1>
+    <hr>
+    <header>
+        <section>
+            <div  id="formNome">
+            <form>
+                <label for="name-example">Nome</label>
+                <input
+                size="50"
+                type="name"
+                id="name-example"
+                 placeholder="Nome"
+                name="name-example"
+                required
+                /> 
+
+            </form>
+            <button onclick="funcaoNome ()">Ok</button>
+        </div>
+        <div id="resultado">O seu rendimento foi </div>
+            <div id="perguntaJogar"></div>
+            <div id="nomeEnable"></div>
+            <div id="resultado"></div>
+            <div id="jogar">
+                <div id= "jogPerg">Gostaria de responder o questionário?</div><br>
+                <button onclick="funcaoSim ()">Sim</button>
+                <button onclick="funcaoNao ()">Não</button>
+            </div>
+            <br><hr><br>
+        </section>
+        <section id="questionario">
+            <div id='primeira'>
+                <form id="respUm">
+                <label for="primPergunta">1. Para incluir JavaScript em uma página HTML o elemento usado é ?<br><br></label>
+                <input
+                size="50"
+                type="resposta"
+                id="primPergunta"
+                placeholder="Resposta"
+                required/>
+                </form>
+                <br><hr><br>
+            </div>
+             
+            <div>
+                <form  id="respRadio">
+                        <label>2. HTML é uma linguagem de programação?</label>
+                        <input type="radio"  name="respostaRadio" value="s"><label id ="segSim">Sim</label>
+                        <input type="radio"  name="respostaRadio" value="n"><label id="segNao">Não</label>
+                </form>
+            </div>
+                <br><hr><br>
+            <div>
+                <form id="terPergunta">
+                    <label>3. São navegadores:</label><br>
+                        <input type="checkbox" name="resposta" value="s"><label id="checkbox0">Chrome</label><br>
+                        <input type="checkbox" name="resposta" value="n"><label id="checkbox1">JavaScript</label><br>
+                        <input type="checkbox" name="resposta" value="s"><label id="checkbox2">InternetExplore</label><br>
+                        <input type="checkbox" name="resposta" value="s"><label id="checkbox3">FireFox</label>
+                </form>
+            </div>
+            <br><hr><br>
+            <button onclick="funcaoRespostas ()">Enviar</button>
+        </section>
+    </header>       
+  <script src="script.js"></script> 
+    </div> 
+</body>
+</html>
